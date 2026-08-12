@@ -1,7 +1,7 @@
 /* base/globals */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 112px;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -97,7 +97,7 @@ ol {
 @media (max-width: 700px) {
 
 html {
-    scroll-padding-top: 86px;
+    scroll-padding-top: 76px;
   }
 }
 
