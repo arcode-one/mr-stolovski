@@ -1,0 +1,249 @@
+/* blocks/contact */
+.contact {
+  padding: 0 0 var(--section-space);
+  background: var(--color-cream);
+}
+
+.contact__card {
+  position: relative;
+  display: grid;
+  min-height: 590px;
+  overflow: hidden;
+  grid-template-columns: auto 1fr 0.7fr;
+  align-items: center;
+  gap: clamp(40px, 7vw, 100px);
+  padding: clamp(48px, 7vw, 96px);
+  color: var(--color-cream);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(134, 162, 58, 0.12), transparent 27%),
+    var(--color-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: 14px 14px 0 var(--color-lime);
+}
+
+.contact__card::before {
+  position: absolute;
+  top: -170px;
+  right: -90px;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  content: "";
+}
+
+.contact__mark {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 3px solid var(--color-cream);
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 var(--color-yellow);
+  transform: rotate(-7deg);
+}
+
+.contact__mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__copy,
+.contact__phones {
+  position: relative;
+  z-index: 2;
+}
+
+.contact__copy h2 {
+  margin-bottom: 28px;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5.8vw, 86px);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.contact__copy h2 em {
+  color: var(--color-lime);
+  font-style: normal;
+}
+
+.contact__copy > p:last-child {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: rgba(255, 253, 247, 0.58);
+  font-size: 13px;
+}
+
+.contact__phones {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__phones a {
+  display: flex;
+  padding-block: 21px;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact__phones a:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact__phones span {
+  color: var(--color-green);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact__phones strong {
+  margin-top: 5px;
+  font-family: var(--font-display);
+  font-size: clamp(25px, 2.7vw, 40px);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 1220px) {
+
+.contact__card {
+    grid-template-columns: auto 1fr;
+  }
+
+.contact__phones {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 940px) {
+
+.contact__card {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+
+.contact__card {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 42px 24px;
+    box-shadow: 8px 8px 0 var(--color-lime);
+  }
+
+.contact__mark {
+    width: 88px;
+    height: 88px;
+  }
+
+.contact__copy h2 {
+    font-size: clamp(42px, 12vw, 60px);
+  }
+
+.contact__phones {
+    grid-column: auto;
+  }
+
+.contact__phones strong {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 390px) {
+
+.contact__phones strong {
+    font-size: 24px;
+  }
+}
+
+.contact__card {
+  min-height: 500px;
+  color: var(--color-ink);
+  background: #eff0d9;
+  border: 1px solid var(--color-line);
+  box-shadow: none;
+}
+
+.contact__card::before {
+  display: none;
+}
+
+.contact__mark {
+  width: 104px;
+  height: 104px;
+  border: 5px solid var(--color-cream);
+  box-shadow: 0 10px 28px rgba(31, 37, 28, 0.11);
+  transform: none;
+}
+
+.contact__copy h2 {
+  font-size: clamp(44px, 5vw, 72px);
+}
+
+.contact__copy h2 {
+  overflow: visible;
+  line-height: var(--heading-line-height);
+}
+
+.contact__copy h2 em {
+  color: var(--color-green-deep);
+}
+
+.contact__copy > p:last-child {
+  color: var(--color-muted);
+}
+
+.contact__phones {
+  gap: 18px;
+}
+
+.contact__phones a,
+.contact__phones a:last-child {
+  padding-block: 8px;
+  border: 0;
+  transition:
+    color var(--ease),
+    transform var(--ease);
+}
+
+.contact__phones span {
+  color: var(--color-green-deep);
+}
+
+.contact__phones strong {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+}
+
+.contact__phones strong {
+  transition: color var(--ease);
+}
+
+.contact__phones a:hover,
+.contact__phones a:focus-visible {
+  color: inherit;
+  transform: none;
+}
+
+.contact__phones a:hover strong,
+.contact__phones a:focus-visible strong {
+  color: var(--color-green-deep);
+}
+
+.contact__copy h2 {
+  margin-bottom: var(--heading-content-gap);
+}
+
+@media (max-width: 700px) {
+
+.contact__card {
+    min-height: 0;
+    box-shadow: none;
+  }
+}

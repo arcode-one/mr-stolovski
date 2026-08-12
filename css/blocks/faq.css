@@ -1,0 +1,167 @@
+/* blocks/faq */
+.faq {
+  background: var(--color-cream);
+}
+
+.faq__container {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.68fr) minmax(520px, 1fr);
+  align-items: start;
+  gap: clamp(60px, 10vw, 150px);
+}
+
+.faq__heading {
+  position: sticky;
+  top: 130px;
+}
+
+.faq__heading > p:last-child {
+  max-width: 430px;
+  margin: 29px 0 0;
+  color: var(--color-muted);
+}
+
+.faq__list {
+  border-top: 2px solid var(--color-ink);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.faq-item summary {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding-block: 26px;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 1.8vw, 27px);
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary i {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  transition:
+    background var(--ease),
+    border-color var(--ease),
+    transform var(--ease);
+}
+
+.faq-item summary i::before,
+.faq-item summary i::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  background: var(--color-ink);
+  content: "";
+  transition:
+    background var(--ease),
+    transform var(--ease);
+  transform: translate(-50%, -50%);
+}
+
+.faq-item summary i::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-item[open]:not(.is-closing) summary i {
+  background: var(--color-lime);
+  transform: rotate(180deg);
+}
+
+.faq-item[open]:not(.is-closing) summary i::after {
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.faq-item > div {
+  overflow: hidden;
+}
+
+.faq-item > div p {
+  max-width: 650px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 70px 0 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.faq-item[open] > div p,
+.faq-item.is-closing > div p {
+  padding-bottom: 27px;
+}
+
+@media (max-width: 940px) {
+
+.faq__container {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+.faq__heading {
+    position: static;
+  }
+}
+
+@media (max-width: 700px) {
+
+.faq-item summary {
+    padding-block: 22px;
+    font-size: 18px;
+  }
+
+.faq-item > div p {
+    padding-right: 30px;
+  }
+}
+
+.faq__list {
+  border-top: 0;
+}
+
+.faq-item[open]:not(.is-closing) summary i {
+  background: var(--color-paper-deep);
+}
+
+.faq-item summary {
+  transition:
+    color var(--ease),
+    transform var(--ease);
+}
+
+.faq-item summary:hover,
+.faq-item summary:focus-visible {
+  color: var(--color-green-deep);
+}
+
+.faq-item summary:hover i,
+.faq-item summary:focus-visible i {
+  background: var(--color-lime);
+  border-color: var(--color-green-deep);
+}
+
+.faq__heading > p:last-child {
+  margin-top: var(--heading-content-gap);
+}
+
+@media (max-width: 940px) {
+
+.faq__container {
+    gap: var(--heading-content-gap);
+  }
+}

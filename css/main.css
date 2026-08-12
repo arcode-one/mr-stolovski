@@ -1,0 +1,20 @@
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+@import "./components/layout.css";
+@import "./components/link-arrow.css";
+@import "./components/animations.css";
+
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/weekly-menu.css";
+@import "./blocks/family-sets.css";
+@import "./blocks/frozen-products.css";
+@import "./blocks/delivery.css";
+@import "./blocks/location.css";
+@import "./blocks/production.css";
+@import "./blocks/faq.css";
+@import "./blocks/contact.css";
+@import "./blocks/footer.css";

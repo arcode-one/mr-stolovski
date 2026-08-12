@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Mr. Stolovski — ежедневное меню и семейные обеды</title>
+		<meta
+			name="description"
+			content="Mr. Stolovski — готовые домашние блюда и семейные наборы. Новое меню каждый будний день, заказ за 24 часа, самовывоз с Чернореченской, 21 и доставка."
+		/>
+		<meta
+			name="keywords"
+			content="Mr Stolovski, готовые обеды, семейные обеды, ежедневное меню, домашняя еда, доставка обедов, замороженные котлеты, сырники"
+		/>
+		<meta name="author" content="Mr. Stolovski" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#46643f" />
+		<link rel="canonical" href="https://example.ru/" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="ru_RU" />
+		<meta
+			property="og:title"
+			content="Mr. Stolovski — каждый день новое меню"
+		/>
+		<meta
+			property="og:description"
+			content="Выбирайте блюда дня или собирайте большой заказ на семью. Заказ по телефону за 24 часа."
+		/>
+		<meta property="og:url" content="https://example.ru/" />
+		<meta
+			property="og:image"
+			content="https://example.ru/assets/images/og-cover.jpg"
+		/>
+		<meta
+			property="og:image:alt"
+			content="Готовый семейный обед от Mr. Stolovski"
+		/>
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Mr. Stolovski — готовые обеды для семьи"
+		/>
+		<meta
+			name="twitter:description"
+			content="Ежедневное меню, семейные наборы и домашняя заморозка."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://example.ru/assets/images/og-cover.jpg"
+		/>
+
+		<link rel="icon" href="assets/icons/favicon.webp" type="image/webp" />
+		<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FoodEstablishment",
+				"name": "Mr. Stolovski",
+				"description": "Готовые домашние блюда, семейные обеды и заморозка",
+				"url": "https://example.ru/",
+				"telephone": ["+7-927-603-75-43", "+7-906-338-85-89"],
+				"servesCuisine": ["Домашняя", "Русская"],
+				"priceRange": "₽₽",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "ул. Чернореченская, 21",
+					"addressCountry": "RU"
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": [
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday"
+						],
+						"opens": "09:00",
+						"closes": "18:00"
+					}
+				],
+				"image": "https://example.ru/assets/images/og-cover.jpg"
+			}
+		</script>
+	</head>
+
+	<body>
+		<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+		<header class="header" data-header>
+			<div class="header__accent" aria-hidden="true"></div>
+			<div class="header__container container">
+				<a class="logo" href="#top" aria-label="Mr. Stolovski — на главную">
+					<img
+						class="logo__image"
+						src="assets/images/logo-mr-stolovski.webp"
+						alt="Mr. Stolovski"
+						width="288"
+						height="240"
+					/>
+				</a>
+
+				<nav class="header__nav" aria-label="Основная навигация">
+					<a class="header__link" href="#menu">Меню недели</a>
+					<a class="header__link" href="#sets">Наборы</a>
+					<a class="header__link" href="#frozen">Заморозка</a>
+					<a class="header__link" href="#delivery">Доставка</a>
+					<a class="header__link" href="#contacts">Контакты</a>
+				</nav>
+
+				<div class="header__contacts">
+					<span class="header__contacts-caption">Заказы по телефону</span>
+					<div class="header__contacts-row">
+						<a href="tel:+79276037543" data-tel-primary data-phone-primary
+							>8 (927) 603-75-43</a
+						>
+						<i aria-hidden="true"></i>
+						<a href="tel:+79063388589" data-tel-secondary data-phone-secondary
+							>8 (906) 338-85-89</a
+						>
+					</div>
+				</div>
+
+				<button
+					class="burger"
+					type="button"
+					aria-label="Открыть меню"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					data-burger
+				>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</button>
+			</div>
+
+			<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+				<nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+					<a class="mobile-menu__link" href="#menu">Меню недели</a>
+					<a class="mobile-menu__link" href="#sets">Семейные наборы</a>
+					<a class="mobile-menu__link" href="#frozen">Заморозка</a>
+					<a class="mobile-menu__link" href="#delivery">Доставка и оплата</a>
+					<a class="mobile-menu__link" href="#contacts">Контакты</a>
+				</nav>
+
+				<div class="mobile-menu__contacts">
+					<span class="mobile-menu__contacts-caption">Заказы по телефону</span>
+					<div class="mobile-menu__phones">
+						<a
+							href="tel:+79276037543"
+							data-tel-primary
+							data-phone-primary
+						>8 (927) 603-75-43</a>
+						<a
+							href="tel:+79063388589"
+							data-tel-secondary
+							data-phone-secondary
+						>8 (906) 338-85-89</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main id="main">
+			<section class="hero" id="top" aria-labelledby="hero-title">
+				<div class="hero__grid-lines" aria-hidden="true"></div>
+				<div class="hero__container container">
+					<div class="hero__intro">
+						<div class="hero__heading" data-reveal>
+							<div class="hero__kicker">
+								<p>
+									Готовая еда для семей, у которых есть дела поважнее кастрюль
+								</p>
+							</div>
+							<h1 class="hero__title" id="hero-title">
+								Готовые обеды
+								<span>для всей семьи.</span>
+								<em>Доставка и самовывоз.</em>
+							</h1>
+						</div>
+
+						<div class="hero__content" data-reveal>
+							<p class="hero__lead">
+								Выбирайте блюда дня или собирайте большой заказ на всю семью.
+								Закажите за 24 часа — мы приготовим, упакуем и согласуем
+								получение.
+							</p>
+
+							<div class="hero__actions">
+								<a
+									class="hero__call hero__call--primary"
+									href="tel:+79276037543"
+									data-tel-primary
+								>
+									<span class="hero__call-icon" aria-hidden="true">
+										<svg width="30" height="24" viewBox="0 0 30 24">
+											<path
+												class="hero__call-handset"
+												d="M7.6 3.8h3l1.5 4.6-2.2 1.5a14.6 14.6 0 0 0 4.2 4.2l1.5-2.2 4.6 1.5v3a2.7 2.7 0 0 1-2.7 2.7A13.6 13.6 0 0 1 4.9 6.5a2.7 2.7 0 0 1 2.7-2.7Z"
+											/>
+											<path class="hero__call-wave hero__call-wave--one" d="M20.2 7.2c1.4 1.3 2.2 3 2.2 4.8" />
+											<path class="hero__call-wave hero__call-wave--two" d="M22.8 4.7c2.2 2 3.4 4.5 3.4 7.3" />
+										</svg>
+									</span>
+									<span
+										><small>Заказать по телефону</small
+										><strong data-phone-primary>8 (927) 603-75-43</strong></span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__visual" data-reveal>
+						<div class="hero__image-frame">
+							<img
+								class="hero__image"
+								src="assets/images/hero-family-meal.webp"
+								alt="Готовый семейный обед с супом, горячим, гарниром и салатом"
+								width="1672"
+								height="941"
+								fetchpriority="high"
+							/>
+						</div>
+
+						<div class="hero__menu-ticket">
+							<div class="hero__menu-ticket-top">
+								<span>Меню дня</span>
+								<strong data-hero-menu-day>ПН</strong>
+							</div>
+							<p data-hero-menu-summary>
+								Борщ · куриный суп · три горячих · три гарнира · салаты ·
+								выпечка
+							</p>
+							<a href="#menu"
+								>Открыть всё меню
+								<span class="link-arrow link-arrow--down" aria-hidden="true"
+									>↓</span
+								></a
+							>
+						</div>
+
+						<div class="hero__sticker">
+							<span>на</span>
+							<strong>4–5</strong>
+							<span>человек</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="hero__info-rail" aria-label="Краткая информация">
+				<div class="hero__info-rail-track">
+					<div class="hero__info-rail-group">
+						<span>Пн–пт · 09:00–18:00</span>
+						<span>Новое меню каждый будний день</span>
+						<span>Семейные наборы на 4–5 человек</span>
+						<span>Суп, горячее, гарнир и салат</span>
+						<span>Доставка или самовывоз</span>
+						<span>Оплата при получении</span>
+						<span>Чернореченская, 21</span>
+					</div>
+					<div class="hero__info-rail-group" aria-hidden="true">
+						<span>Пн–пт · 09:00–18:00</span>
+						<span>Новое меню каждый будний день</span>
+						<span>Семейные наборы на 4–5 человек</span>
+						<span>Суп, горячее, гарнир и салат</span>
+						<span>Доставка или самовывоз</span>
+						<span>Оплата при получении</span>
+						<span>Чернореченская, 21</span>
+					</div>
+				</div>
+			</div>
+
+			<section
+				class="weekly-menu section"
+				id="menu"
+				aria-labelledby="menu-title"
+			>
+				<div class="weekly-menu__container container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">
+								<span aria-hidden="true"></span> Пять дней — пять разных меню
+							</p>
+							<h2 class="section-title" id="menu-title">
+								Что готовим<br />на этой неделе
+							</h2>
+						</div>
+						<div class="section-head__aside">
+							<p>
+								Блюда можно сочетать в удобном количестве. Актуальное наличие,
+								порции и стоимость администратор подтвердит во время звонка.
+							</p>
+						</div>
+					</div>
+
+					<div
+						class="day-tabs"
+						role="tablist"
+						aria-label="Выберите день недели"
+						data-reveal
+					>
+						<button
+							class="day-tabs__button is-active"
+							type="button"
+							role="tab"
+							aria-selected="true"
+							aria-label="Понедельник"
+							data-menu-tab="monday"
+						>
+							<span class="day-tabs__label day-tabs__label--full">Понедельник</span>
+							<span class="day-tabs__label day-tabs__label--compact" aria-hidden="true">Пн</span>
+						</button>
+						<button
+							class="day-tabs__button"
+							type="button"
+							role="tab"
+							aria-selected="false"
+							aria-label="Вторник"
+							data-menu-tab="tuesday"
+						>
+							<span class="day-tabs__label day-tabs__label--full">Вторник</span>
+							<span class="day-tabs__label day-tabs__label--compact" aria-hidden="true">Вт</span>
+						</button>
+						<button
+							class="day-tabs__button"
+							type="button"
+							role="tab"
+							aria-selected="false"
+							aria-label="Среда"
+							data-menu-tab="wednesday"
+						>
+							<span class="day-tabs__label day-tabs__label--full">Среда</span>
+							<span class="day-tabs__label day-tabs__label--compact" aria-hidden="true">Ср</span>
+						</button>
+						<button
+							class="day-tabs__button"
+							type="button"
+							role="tab"
+							aria-selected="false"
+							aria-label="Четверг"
+							data-menu-tab="thursday"
+						>
+							<span class="day-tabs__label day-tabs__label--full">Четверг</span>
+							<span class="day-tabs__label day-tabs__label--compact" aria-hidden="true">Чт</span>
+						</button>
+						<button
+							class="day-tabs__button"
+							type="button"
+							role="tab"
+							aria-selected="false"
+							aria-label="Пятница"
+							data-menu-tab="friday"
+						>
+							<span class="day-tabs__label day-tabs__label--full">Пятница</span>
+							<span class="day-tabs__label day-tabs__label--compact" aria-hidden="true">Пт</span>
+						</button>
+					</div>
+
+					<article class="menu-board" data-reveal>
+						<div class="menu-board__side">
+							<span class="menu-board__side-caption">Меню дня</span>
+							<strong class="menu-board__day" data-menu-day-label
+								>Понедельник</strong
+							>
+							<p>
+								Готовим небольшими партиями, поэтому лучше оформить заказ
+								заранее.
+							</p>
+						</div>
+
+						<div
+							class="menu-board__content"
+							data-menu-content
+							aria-live="polite"
+						>
+							<section class="menu-category">
+								<div class="menu-category__head">
+									<h3>Супы</h3>
+								</div>
+								<ul>
+									<li>Борщ</li>
+									<li>Суп куриный с лапшой</li>
+								</ul>
+							</section>
+							<section class="menu-category menu-category--lime">
+								<div class="menu-category__head">
+									<h3>Салаты</h3>
+								</div>
+								<ul>
+									<li>Оливье</li>
+									<li>Цезарь</li>
+									<li>Винегрет</li>
+								</ul>
+							</section>
+							<section class="menu-category menu-category--wide">
+								<div class="menu-category__head">
+									<h3>Горячее</h3>
+								</div>
+								<ul>
+									<li>Куриные биточки</li>
+									<li>Куриное филе под сырной шапкой</li>
+									<li>Котлета домашняя</li>
+								</ul>
+							</section>
+							<section class="menu-category menu-category--lime">
+								<div class="menu-category__head">
+									<h3>Гарниры</h3>
+								</div>
+								<ul>
+									<li>Картофельное пюре</li>
+									<li>Макароны</li>
+									<li>Гречка</li>
+								</ul>
+							</section>
+							<section class="menu-category">
+								<div class="menu-category__head">
+									<h3>Напитки и выпечка</h3>
+								</div>
+								<ul>
+									<li>Компот</li>
+									<li>Выпечка — 3–4 вида</li>
+								</ul>
+							</section>
+						</div>
+					</article>
+
+					<div class="weekly-menu__note" data-reveal>
+						<span class="weekly-menu__note-mark" aria-hidden="true">!</span>
+						<p>
+							Нужен большой семейный заказ? Назовите администратору количество
+							человек — он поможет собрать суп, горячее, гарниры и салаты из
+							меню выбранного дня.
+						</p>
+						<a href="tel:+79276037543" data-tel-primary
+							>Собрать заказ
+							<span class="link-arrow" aria-hidden="true">→</span></a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="sets section" id="sets" aria-labelledby="sets-title">
+				<div class="sets__container container">
+					<div class="sets__intro" data-reveal>
+						<div>
+							<p class="eyebrow">
+								<span aria-hidden="true"></span> Не только порционный обед
+							</p>
+							<h2 class="section-title" id="sets-title">
+								Соберём еду<br />на всю семью
+							</h2>
+						</div>
+						<p class="sets__intro-text">
+							Эти форматы — ориентир. Точный состав собирается из меню нужного
+							дня, поэтому сайт не ограничивает вас одним готовым набором.
+						</p>
+					</div>
+
+					<div class="sets__grid">
+						<article class="set-card set-card--large" data-reveal>
+							<div class="set-card__media">
+								<img
+									class="set-card__image"
+									src="assets/images/family-lunch.webp"
+									alt="Семейный обед с борщом, котлетами, гарниром и салатом"
+									width="1254"
+									height="1254"
+									loading="lazy"
+									decoding="async"
+								/>
+								<span class="set-card__badge">Самый понятный</span>
+							</div>
+							<div class="set-card__body">
+								<div>
+									<h3 class="set-card__title">Семейный обед</h3>
+									<p class="set-card__text">
+										Пример: 1 л супа, 5 порций горячего, 1 кг гарнира и 500 г
+										салата.
+									</p>
+								</div>
+								<a
+									class="set-card__link"
+									href="tel:+79276037543"
+									data-tel-primary
+									>Уточнить состав
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+
+						<article class="set-card" data-reveal>
+							<div class="set-card__media">
+								<img
+									class="set-card__image"
+									src="assets/images/family-dinner.webp"
+									alt="Готовый семейный ужин с горячим, гарниром и салатом"
+									width="1122"
+									height="1402"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<div class="set-card__body">
+								<div>
+									<h3 class="set-card__title">Ужин без готовки</h3>
+									<p class="set-card__text">
+										Горячее, гарнир, салат и свежая выпечка — достаточно
+										разогреть и накрыть на стол.
+									</p>
+								</div>
+								<a
+									class="set-card__link"
+									href="tel:+79063388589"
+									data-tel-secondary
+									>Заказать
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+
+						<article class="set-card set-card--dark" data-reveal>
+							<div class="set-card__media">
+								<img
+									class="set-card__image"
+									src="assets/images/family-meals-two-days.webp"
+									alt="Большой набор готовой еды для семьи на два дня"
+									width="1122"
+									height="1402"
+									loading="lazy"
+									decoding="async"
+								/>
+								<span class="set-card__badge">Больше свободного времени</span>
+							</div>
+							<div class="set-card__body">
+								<div>
+									<h3 class="set-card__title">Запас на два дня</h3>
+									<p class="set-card__text">
+										Большой заказ из нескольких горячих блюд, гарниров, супов и
+										салатов.
+									</p>
+								</div>
+								<a
+									class="set-card__link"
+									href="tel:+79276037543"
+									data-tel-primary
+									>Собрать набор
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="frozen section"
+				id="frozen"
+				aria-labelledby="frozen-title"
+			>
+				<div class="frozen__glow" aria-hidden="true"></div>
+				<div class="frozen__container container">
+					<div class="section-head section-head--light" data-reveal>
+						<div>
+							<p class="eyebrow eyebrow--light">
+								<span aria-hidden="true"></span> В наличии каждый день
+							</p>
+							<h2 class="section-title" id="frozen-title">
+								Домашняя заморозка.<br />Приготовите, когда удобно.
+							</h2>
+						</div>
+						<div class="section-head__aside">
+							<p>
+								Три постоянные позиции для морозилки. Вес упаковки, количество и
+								стоимость уточняйте при заказе
+							</p>
+						</div>
+					</div>
+
+					<div class="frozen__grid">
+						<article class="frozen-card" data-reveal>
+							<div class="frozen-card__media">
+								<img
+									src="assets/images/frozen-chicken-cutlets.webp"
+									alt="Замороженные куриные котлеты"
+									width="1122"
+									height="1402"
+									loading="lazy"
+									decoding="async"
+								/>
+								<span class="frozen-card__tag">Каждый день</span>
+							</div>
+							<div class="frozen-card__body">
+								<h3>Куриные котлеты</h3>
+								<p>Нежные котлеты для быстрого домашнего обеда или ужина.</p>
+								<a href="tel:+79276037543" data-tel-primary
+									>Узнать наличие
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+
+						<article class="frozen-card frozen-card--yellow" data-reveal>
+							<div class="frozen-card__media">
+								<img
+									src="assets/images/frozen-homemade-cutlets.webp"
+									alt="Замороженные домашние котлеты"
+									width="1120"
+									height="1400"
+									loading="lazy"
+									decoding="async"
+								/>
+								<span class="frozen-card__tag">Каждый день</span>
+							</div>
+							<div class="frozen-card__body">
+								<h3>Домашние котлеты</h3>
+								<p>Классический вкус и удобный запас для всей семьи.</p>
+								<a href="tel:+79063388589" data-tel-secondary
+									>Узнать наличие
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+
+						<article class="frozen-card" data-reveal>
+							<div class="frozen-card__media">
+								<img
+									src="assets/images/frozen-syrniki.webp"
+									alt="Замороженные сырники"
+									width="1122"
+									height="1402"
+									loading="lazy"
+									decoding="async"
+								/>
+								<span class="frozen-card__tag">Каждый день</span>
+							</div>
+							<div class="frozen-card__body">
+								<h3>Сырники</h3>
+								<p>
+									Завтрак без долгой подготовки — остаётся только приготовить.
+								</p>
+								<a href="tel:+79276037543" data-tel-primary
+									>Узнать наличие
+									<span class="link-arrow" aria-hidden="true">→</span></a
+								>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="delivery section"
+				id="delivery"
+				aria-labelledby="delivery-title"
+			>
+				<div class="delivery__container container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">
+								<span aria-hidden="true"></span> От звонка до вашего стола
+							</p>
+							<h2 class="section-title" id="delivery-title">
+								Заказ без формы.<br />Всё решаем голосом.
+							</h2>
+						</div>
+					</div>
+
+					<ol class="order-steps">
+						<li class="order-step" data-reveal>
+							<span class="order-step__num">01</span>
+							<div class="order-step__icon" aria-hidden="true">
+									<svg width="31" height="31" viewBox="0 0 32 32">
+										<use href="assets/icons/sprite.svg#icon-phone"></use>
+									</svg>
+							</div>
+							<h3>Позвоните</h3>
+							<p>
+								Назовём актуальное меню, наличие заморозки и ответим на вопросы.
+							</p>
+						</li>
+						<li class="order-step order-step--lime" data-reveal>
+							<span class="order-step__num">02</span>
+							<div class="order-step__icon" aria-hidden="true">
+									<svg width="31" height="31" viewBox="0 0 32 32">
+										<use href="assets/icons/sprite.svg#icon-order"></use>
+									</svg>
+							</div>
+							<h3>Выберите блюда</h3>
+							<p>
+								Соберём порционный заказ или большой набор на нужное количество
+								человек.
+							</p>
+						</li>
+						<li class="order-step order-step--yellow" data-reveal>
+							<span class="order-step__num">03</span>
+							<div class="order-step__icon" aria-hidden="true">
+									<svg width="31" height="31" viewBox="0 0 32 32">
+										<use href="assets/icons/sprite.svg#icon-prepare"></use>
+									</svg>
+							</div>
+							<h3
+								class="order-step__title-time"
+								aria-label="Оформите за 24 часа"
+							>
+								Оформите за 24
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<use href="assets/icons/sprite.svg#icon-clock"></use>
+								</svg>
+							</h3>
+							<p>
+								Так мы успеем приготовить нужный объём специально к
+								согласованному времени.
+							</p>
+						</li>
+						<li class="order-step" data-reveal>
+							<span class="order-step__num">04</span>
+							<div class="order-step__icon" aria-hidden="true">
+									<svg width="31" height="31" viewBox="0 0 32 32">
+										<use href="assets/icons/sprite.svg#icon-home"></use>
+									</svg>
+							</div>
+							<h3>Получите заказ</h3>
+							<p>
+								Заберите на Чернореченской, 21 или согласуйте доставку до дома.
+							</p>
+						</li>
+					</ol>
+
+					<div class="delivery__options">
+						<article class="delivery-card delivery-card--courier" data-reveal>
+							<div class="delivery-card__top">
+								<span>Доставка</span>
+								<strong>≈ 300 ₽</strong>
+							</div>
+							<h3>До вашей двери</h3>
+							<p>
+								Доставим своим водителем или через Яндекс Доставку. Итоговую
+								стоимость и доступность подтвердит администратор при оформлении.
+							</p>
+							<span class="delivery-card__small"
+								>Стоимость указана ориентировочно</span
+							>
+						</article>
+
+						<article class="delivery-card delivery-card--pickup" data-reveal>
+							<div class="delivery-card__top">
+								<span>Самовывоз</span>
+								<strong>0 ₽</strong>
+							</div>
+							<h3>Чернореченская, 21</h3>
+							<p>
+								Заказ будет ждать вас в согласованное время. Оплатить можно на
+								кассе при получении.
+							</p>
+							<a href="#contacts"
+								>Посмотреть контакты
+								<span class="link-arrow link-arrow--down" aria-hidden="true"
+									>↓</span
+								></a
+							>
+						</article>
+					</div>
+
+					<div class="payment" data-reveal>
+						<div class="payment__title">
+							<span>Оплата</span>
+							<h3>Как будет удобнее</h3>
+						</div>
+						<ul class="payment__list">
+							<li>
+								<span class="payment__icon">01</span><strong>Терминал</strong
+								><small>у курьера</small>
+							</li>
+							<li>
+								<span class="payment__icon">02</span><strong>QR-код</strong
+								><small>при получении</small>
+							</li>
+							<li>
+								<span class="payment__icon">03</span><strong>Перевод</strong
+								><small>по согласованию</small>
+							</li>
+							<li>
+								<span class="payment__icon">04</span><strong>На кассе</strong
+								><small>при самовывозе</small>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="location section"
+				id="contacts"
+				aria-labelledby="location-title"
+			>
+				<div class="location__container container">
+					<div class="location__visual" data-reveal>
+						<div
+							class="location__image-frame"
+							data-location-slider
+							role="group"
+							aria-label="Фотографии интерьера Mr. Stolovski"
+						>
+							<img
+								class="location__slide is-active"
+							data-location-slide
+							src="assets/images/interior-neon-table.webp"
+								alt="Интерьер Mr. Stolovski на Чернореченской, 21"
+								width="852"
+								height="1280"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="false"
+							/>
+							<img
+								class="location__slide"
+							data-location-slide
+							src="assets/images/interior-green-wall.webp"
+								alt="Зал Mr. Stolovski с зелёным декором и жёлтыми креслами"
+								width="960"
+								height="1280"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+							<img
+								class="location__slide"
+							data-location-slide
+							src="assets/images/interior-bar-neon.webp"
+								alt="Интерьер Mr. Stolovski с барной стойкой и неоновой вывеской"
+								width="853"
+								height="1280"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+							<img
+								class="location__slide"
+							data-location-slide
+							src="assets/images/interior-dining-room.webp"
+								alt="Просторный зал Mr. Stolovski"
+								width="1280"
+								height="854"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+							<img
+								class="location__slide"
+							data-location-slide
+							src="assets/images/interior-wide-hall.webp"
+								alt="Обеденный зал Mr. Stolovski"
+								width="1280"
+								height="854"
+								loading="lazy"
+								decoding="async"
+								aria-hidden="true"
+							/>
+						</div>
+					</div>
+
+					<div class="location__content" data-reveal>
+						<p class="eyebrow">
+							<span aria-hidden="true"></span> Забрать заказ лично
+						</p>
+						<h2 class="section-title" id="location-title">
+							Ждём на<br />Чернореченской, 21
+						</h2>
+						<p class="location__lead">
+							Здесь можно забрать семейный заказ без доставки и оплатить его на
+							кассе. Время получения заранее согласуем по телефону.
+						</p>
+
+						<dl class="location__details">
+							<div>
+								<dt>
+									<span class="location__detail-icon" aria-hidden="true">
+									<svg viewBox="0 0 24 24">
+										<use href="assets/icons/sprite.svg#icon-clock"></use>
+									</svg>
+									</span>
+									График
+								</dt>
+								<dd>Понедельник — пятница<br /><strong>09:00–18:00</strong></dd>
+							</div>
+							<div>
+								<dt>
+									<span class="location__detail-icon" aria-hidden="true">
+									<svg viewBox="0 0 24 24">
+										<use href="assets/icons/sprite.svg#icon-location"></use>
+									</svg>
+									</span>
+									Адрес
+								</dt>
+								<dd>
+									ул. Чернореченская, 21<br /><strong
+										>самовывоз бесплатно</strong
+									>
+								</dd>
+							</div>
+						</dl>
+
+						<div class="location__phones">
+							<span>Телефоны для заказа</span>
+							<a href="tel:+79276037543" data-tel-primary data-phone-primary
+								>8 (927) 603-75-43</a
+							>
+							<a href="tel:+79063388589" data-tel-secondary data-phone-secondary
+								>8 (906) 338-85-89</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="production section" aria-labelledby="production-title">
+				<div class="production__container container">
+					<div class="production__visual" data-reveal>
+						<div class="production__media">
+							<img
+								src="assets/images/production-kitchen.webp"
+								alt="Профессиональная кухня Mr. Stolovski"
+								width="1448"
+								height="1086"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<div class="production__label">
+							<strong>Действующее производство</strong>
+						</div>
+					</div>
+
+					<div class="production__copy" data-reveal>
+						<p class="eyebrow eyebrow--light">
+							<span aria-hidden="true"></span> Есть опыт, команда и мощности
+						</p>
+						<h2 class="section-title" id="production-title">
+							Мы не учимся готовить на вашем заказе.
+						</h2>
+						<p class="production__lead">
+							Наши повара уже обеспечивают питанием буфеты, столовые,
+							организации и частные клиники. Теперь тот же производственный опыт
+							работает для семей.
+						</p>
+						<ul class="production__facts">
+							<li>
+								<strong>01</strong>
+								<div>
+									<h3>Профессиональная кухня</h3>
+									<p>
+										Готовим не на домашней кухне, а на оборудованном пищевом
+										производстве.
+									</p>
+								</div>
+							</li>
+							<li>
+								<strong>02</strong>
+								<div>
+									<h3>Понятные домашние блюда</h3>
+									<p>
+										Та еда, которую любят в семье: супы, котлеты, гарниры и
+										свежие салаты.
+									</p>
+								</div>
+							</li>
+							<li>
+								<strong>03</strong>
+								<div>
+									<h3>Объёмы уже настроены</h3>
+									<p>
+										Можем собирать полноценные большие наборы, а не маленькие
+										ресторанные порции.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="faq section" id="faq" aria-labelledby="faq-title">
+				<div class="faq__container container">
+					<div class="faq__heading" data-reveal>
+						<p class="eyebrow">
+							<span aria-hidden="true"></span> Коротко о главном
+						</p>
+						<h2 class="section-title" id="faq-title">Перед первым заказом</h2>
+						<p>
+							Если ответа здесь нет — просто позвоните. Живой разговор быстрее
+							любой формы.
+						</p>
+					</div>
+
+					<div class="faq__list" data-reveal>
+						<details class="faq-item" open>
+							<summary>
+								<span>Как оформить заказ?</span><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									Позвоните по одному из двух номеров. Администратор назовёт
+									актуальное меню, поможет с количеством и зафиксирует заказ.
+								</p>
+							</div>
+						</details>
+						<details class="faq-item">
+							<summary>
+								<span>Насколько заранее нужно звонить?</span
+								><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									Заказы принимаем минимум за 24 часа до желаемого времени
+									получения.
+								</p>
+							</div>
+						</details>
+						<details class="faq-item">
+							<summary>
+								<span>Сколько стоит доставка?</span><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									Ориентировочная стоимость — 300 ₽. Она может зависеть от
+									адреса и способа доставки, поэтому точную сумму подтвердит
+									администратор.
+								</p>
+							</div>
+						</details>
+						<details class="faq-item">
+							<summary>
+								<span>Можно забрать заказ самостоятельно?</span
+								><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									Да. Бесплатный самовывоз доступен с Чернореченской, 21 в
+									согласованное время.
+								</p>
+							</div>
+						</details>
+						<details class="faq-item">
+							<summary>
+								<span>Как можно оплатить?</span><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									По терминалу у курьера, по QR-коду или переводом. При
+									самовывозе — картой или наличными на кассе.
+								</p>
+							</div>
+						</details>
+						<details class="faq-item">
+							<summary>
+								<span>Меню точно такое же каждый день?</span
+								><i aria-hidden="true"></i>
+							</summary>
+							<div>
+								<p>
+									Нет, меню меняется по будням. Замороженные куриные котлеты,
+									домашние котлеты и сырники доступны ежедневно при наличии.
+								</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" aria-labelledby="contact-title">
+				<div class="contact__container container">
+					<div class="contact__card" data-reveal>
+						<div class="contact__mark">
+							<img
+								src="assets/icons/favicon.webp"
+								alt=""
+								width="256"
+								height="256"
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<div class="contact__copy">
+							<p class="eyebrow eyebrow--light">
+								<span aria-hidden="true"></span> Заказ принимает человек
+							</p>
+							<h2 id="contact-title">
+								Позвоните сегодня.<br /><em>Завтра готовить не придётся.</em>
+							</h2>
+							<p>
+								Расскажем, что будет в меню, посчитаем нужное количество и
+								согласуем получение.
+							</p>
+						</div>
+						<div class="contact__phones">
+							<a href="tel:+79276037543" data-tel-primary>
+								<span>Основной номер</span>
+								<strong data-phone-primary>8 (927) 603-75-43</strong>
+							</a>
+							<a href="tel:+79063388589" data-tel-secondary>
+								<span>Дополнительный номер</span>
+								<strong data-phone-secondary>8 (906) 338-85-89</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__main">
+					<a
+						class="footer__logo"
+						href="#top"
+						aria-label="Mr. Stolovski — наверх"
+					>
+						<img
+							src="assets/images/logo-mr-stolovski.webp"
+							alt="Mr. Stolovski"
+							width="288"
+							height="240"
+							decoding="async"
+						/>
+					</a>
+					<nav class="footer__nav" aria-label="Навигация в подвале">
+						<a href="#menu">Меню недели</a>
+						<a href="#sets">Наборы</a>
+						<a href="#frozen">Заморозка</a>
+						<a href="#delivery">Доставка и оплата</a>
+						<a href="#contacts">Контакты</a>
+						<a href="#faq">Вопросы</a>
+					</nav>
+					<address class="footer__address">
+						<span>Пн–пт · 09:00–18:00</span>
+						<strong>ул. Чернореченская, 21</strong>
+						<a href="tel:+79276037543" data-tel-primary data-phone-primary
+							>8 (927) 603-75-43</a
+						>
+						<a href="tel:+79063388589" data-tel-secondary data-phone-secondary
+							>8 (906) 338-85-89</a
+						>
+					</address>
+				</div>
+				<div class="footer__bottom">
+					<p>© <span data-year>2026</span> Mr. Stolovski</p>
+					<p>Готовые обеды и еда для всей семьи</p>
+					<a href="#top"
+						>Наверх
+						<span class="link-arrow link-arrow--up" aria-hidden="true"
+							>↑</span
+						></a
+					>
+				</div>
+			</div>
+		</footer>
+
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

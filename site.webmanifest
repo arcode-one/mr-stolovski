@@ -1,0 +1,22 @@
+{
+  "name": "Mr. Stolovski — готовые обеды",
+  "short_name": "Mr. Stolovski",
+  "description": "Ежедневное меню, семейные обеды и домашняя заморозка",
+  "lang": "ru",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f1df",
+  "theme_color": "#46643f",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.webp",
+      "sizes": "256x256",
+      "type": "image/webp"
+    },
+    {
+      "src": "/assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

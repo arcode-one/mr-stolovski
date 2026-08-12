@@ -1,0 +1,30 @@
+/* components/link-arrow */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  color: currentColor;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.7;
+  vertical-align: -0.08em;
+  transition: transform var(--ease);
+}
+
+a:hover .link-arrow,
+a:focus-visible .link-arrow {
+  transform: translateX(4px);
+}
+
+a:hover .link-arrow--down,
+a:focus-visible .link-arrow--down {
+  transform: translateY(3px);
+}
+
+a:hover .link-arrow--up,
+a:focus-visible .link-arrow--up {
+  transform: none;
+}
